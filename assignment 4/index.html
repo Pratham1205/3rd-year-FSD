@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #header{
+            color: black;
+            font-size: 25px;
+            background-color: beige;
+            display: flex;
+        }
+        #header h1 {
+            margin-left: 400px;
+        }
+        #header img{
+            margin-top: 20px;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+
+        #Controllers {
+            display: flex;
+            gap: 100px;
+            margin-top: 20px;
+            align-items: center;
+            margin-left: 400px;
+        }
+        #Controllers button {
+            background-color: red;
+            color: white;
+            border-radius: 10px;
+            height: 50px;
+            width: 150px;
+        }
+
+        #Counter p{
+            margin-left: 570px;
+            font-size: 40px;
+            margin-top: 20px;
+            border: 5px solid black;
+            margin-right: 620px;
+            border-radius: 50%;
+        }
+
+        
+
+
+
+
+
+    </style>
+</head>
+<body>
+    
+
+    <div id="header">
+        <img src="data:image/png;base64,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" alt="logo">
+        <h1 id="FileName">Counter app</h1>
+    </div>
+
+
+    <div id="Counter">
+        <p id="Counter-circle">1</p>
+    </div>
+
+
+
+    <div id="Controllers">
+        <button onclick="increment()">+</button>
+        <button onclick="decrement()">-</button>
+    </div>
+    
+
+
+    <script>
+        var count = 1;
+
+        function increment() {
+            document.getElementById("Counter-circle").innerHTML = count+=1;
+            if(count > 9) {
+                alert("Limit Exceeded");
+            }
+        }
+        function decrement() {
+            document.getElementById("Counter-circle").innerHTML = count-=1;
+            if(count < 1) {
+                alert("Limit Exceeded");
+            }
+        }
+    </script>
+
+</body>
+</html>
+
+
+<!-- limit - 1 to 9, otherwise give a alert -->

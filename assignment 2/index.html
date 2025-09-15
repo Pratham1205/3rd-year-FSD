@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment 2</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: antiquewhite;
+            color: black;
+            height: 60px;
+            padding: 10px;
+            
+        }
+        nav img{
+            width: 40px;
+            height: 40px;
+        }
+        #heading{
+            text-align: center;
+            margin-top: 20px;
+        }
+        #bus-img{
+            align-items: center;
+            margin-top: 20px;
+            margin-left: 950px;
+        }
+        #logo{
+            margin-right: 600px;
+        }
+        #form-items{
+            margin-top: 20px;
+            margin-left: 30px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <img src="https://img.freepik.com/free-vector/colorful-letter-gradient-logo-design_474888-2309.jpg?semt=ais_hybrid&w=740&q=80" alt="logo">
+        <h2 id="logo">Seat Book</h2>
+    </nav>    
+
+
+    <div>
+        <h1 id="heading">*   Welcome To Bus Booking System   *</h1>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi3lh5rcOJvF1eV8tzufzRSe33luPt0H1oZA&s" alt="" id="bus-img">
+    </div>
+
+    <div id="form-items">
+
+        <form>
+
+            <h3>User Details</h3>
+            <br>
+            <label for="">User Name</label>
+            <input type="text">
+            <br><br>
+            <label for="">User Gender </label>
+            <input type="radio" name="gender">Male
+            <input type="radio" name="gender">Female
+            <input type="radio" name="gender">Other
+            <br><br>
+            <label for="">User City</label>
+            <select name="" id="">
+                <option value="">Select your city</option>
+                <option value="">Delhi</option>
+                <option value="">Ghaziabad</option>
+                <option value="">Meerut</option>
+            </select>
+
+            <br><br>
+
+            <label for="">Select your seat   </label>
+            <input type="radio">AC
+            <input type="radio" name="" id="">Non-AC
+
+            <br><br><br>
+            <a href="pay.html">
+                <button>Book</button>
+            </a>
+
+
+            
+        </form>
+
+    </div>
+
+
+
+
+</body>
+</html>
