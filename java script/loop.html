@@ -4,37 +4,46 @@
 
     <title>Document</title>
 
-    <script>
-
-    </script>
-
 </head>
 <body>
 
 
+    <p id="Even1">Even -> </p>
+    <p id="Odd1">Odd -> </p>
 
     <script>
-        // var i;
-        // for(i = 1; i < 11; i++) {
-        //     document.write("Hello<br>");
-        // }
-
-        // var a = 1;
-        // while(a < 11) {
-        //     document.write("Wor;d<br>");
-        //     a++;
-        // }
-
-        var a = 1;
-        do {
-            document.write("DO WHILE LOOP<br>");
-            a++;
-        } while(a < 11);
 
 
+        var num1 = 15;
+        var num2 = 11;
 
 
+        document.write("Table of " + num1 + "<br>");
+        for(var i = 1; i <= 10; i++) {
+            document.write(num1 + " x " + i + " = " + num1*i + "<br>");
+
+            if(i*num1 % 2 == 0) {
+                document.getElementById("Even1").innerHTML += i*num1 + " ";
+            }
+            else {
+                document.getElementById("Odd1").innerHTML += i*num1 + " ";
+            }
+        }
+        document.write("<br><br>Table of " + num2 + "<br>");
+        for(var i = 1; i <= 10; i++) {
+            document.write(num2 + " x " + i + " = " + num2*i + "<br>");
+            if(i*num2 % 2 == 0) {
+                document.getElementById("Even1").innerHTML += i*num2 + " ";
+            }
+            else {
+                document.getElementById("Odd1").innerHTML += i*num2 + " ";
+            }
+        }
+
+        
     </script>
-    
 </body>
 </html>
+
+    </script>
+
