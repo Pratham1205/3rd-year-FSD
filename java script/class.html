@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="pratham"></p>
+
+    <script>
+        class Person {
+            constructor(name, age, gender) {
+                this.name = name;
+                this.age = age;
+                this.gender = gender;
+            }
+            
+        }
+
+        const person1 = new Person("Pratham", 20, "Male");
+        const person2 = new Person("Nishkarsh", 14, "Transgender");
+
+        document.getElementById("pratham").innerHTML = person1.name + "<br>" + person1.age + "<br>" + person1.gender + "<br>" + person2.name + "<br>" + person2.age + "<br>" + person2.gender;
+
+
+
+
+    </script>
+    
+</body>
+</html>
