@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Input Data</h1>
+    <form action="resume.html" method="get" onclick="saveData()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>w
+
+        <label for="course">Course:</label>
+        <input type="text" id="course" name="course"><br><br>
+
+        <label for="language">Languages (comma separated):</label>
+        <input type="text" id="language" name="language"><br><br>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address"></textarea><br><br>
+
+        <button type="submit">Submit Data</button>
+    </form>
+
+    <script>
+        function saveData() {
+            const name = document.getElementById("name").value;
+            const course = document.getElementById("course").value;
+            const language = document.getElementById("language").value;
+            const address = document.getElementById("address").value;
+
+            localStorage.setItem("name", name);
+            localStorage.setItem("course", course);
+            localStorage.setItem("language", language);
+            localStorage.setItem("address", address);
+        }
+    </script>
+
+
+</body>
+</html>

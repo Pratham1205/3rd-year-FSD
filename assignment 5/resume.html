@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            display: flex;
+            gap: 200px;
+            align-items: center;
+        }
+        #image img{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        #name{
+            font-size: 30px;
+            font-weight: bold;
+        }
+        #course{
+            font-size: 20px;
+            color: gray;
+        }
+        #content{
+            margin-top: 20px;
+        }
+        #langList{
+            list-style-type: square;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="container">
+        <div id="image">
+            <img src="" alt="your image">
+        </div>
+        <div>
+            <p id="name"></p>
+            <p id="course"></p>
+        </div>
+    </div>
+
+    <div id="content">
+        <h2 id="lang">Language</h2> <br>
+        <ul id="langList"></ul>
+        <h2 id="address">Address</h2>
+        <p id="inputAddress"></p>
+    </div>
+
+    <script>
+        const name = localStorage.getItem("name");
+        const course = localStorage.getItem("course");
+        const language = localStorage.getItem("language");
+        const address = localStorage.getItem("address");
+
+        const langArray = language.split(",");
+        const langList = document.getElementById("langList");
+        langArray.forEach(lang => {
+            const listItem = document.createElement("li");
+            listItem.textContent = lang.trim();
+            langList.appendChild(listItem);
+        });
+
+        document.getElementById("name").textContent = name;
+        document.getElementById("course").textContent = course;
+        document.getElementById("inputAddress").textContent = address;
+    </script>
+
+</body>
+</html>

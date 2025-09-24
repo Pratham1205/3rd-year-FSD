@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+  
+</head>
+<body>
+
+  <h2>Enter Name:</h2>
+  <input type="text" id="NameInput">
+  <button onclick="showMessage()">Click</button>
+
+  <p id="pratham"></p>
+
+  <script>
+    function showMessage() {
+      var name = document.getElementById("NameInput").value;
+      // let message = `Hey ${name} Welcome to our webpage`;
+      // document.getElementById("pratham").innerText = message;
+
+      document.getElementById("pratham").innerText = name;
+
+    }
+  </script>
+
+</body>
+</html>
+
+
