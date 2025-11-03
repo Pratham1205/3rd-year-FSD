@@ -4,12 +4,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Nav from './components/navbar';
 import Change from './components/change';
 import Counter from './components/counter';
+import UseState from './components/usestate';
 const App = () => {
   return (
     <div>
 
-      <Counter />
-
+      <UseState />
 
       {/* <Nav/>
       <br />
