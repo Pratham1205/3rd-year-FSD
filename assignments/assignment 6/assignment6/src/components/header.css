@@ -1,0 +1,15 @@
+#head{
+    background-color: aqua;
+    height: 80px;
+    width: auto;
+}
+#navbarNavAltMarkup{
+    display: flex;
+    gap: 20px;
+    margin-left: 1000px;
+}
+#navbarNavAltMarkup .nav-link{
+    font-size: 18px;
+    padding-right: 20px;
+    text-decoration: none;
+}

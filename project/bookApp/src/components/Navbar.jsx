@@ -1,12 +1,30 @@
-import React from 'react'
-import './Navbar.css'
+import React from "react";
+import "./Navbar.css";
 
 const Navbar = () => {
   return (
-    <div id='nav'>
-      Home
-    </div>
-  )
-}
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      
+      
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="#">
+            Home
+          </a>
+          <a class="nav-item nav-link" href="#">
+            News
+          </a>
+          <a class="nav-item nav-link" href="#">
+            Contact
+          </a>
+          <a class="nav-item nav-link" href="#">
+            About
+          </a>
+        </div>
+      </div>
+    </nav>
+  );
+};
 
-export default Navbar
+export default Navbar;
