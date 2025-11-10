@@ -1,26 +1,28 @@
 import React from "react";
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar navbar-expand-lg navbar-light bg-light">
       
-      
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="#">
+      <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div className="navbar-nav">
+          <Link to="/" className="nav-item nav-link active">
             Home
-          </a>
-          <a class="nav-item nav-link" href="#">
+          </Link>
+          <Link to="/news" className="nav-item nav-link">
             News
-          </a>
-          <a class="nav-item nav-link" href="#">
+          </Link>
+          <Link to="/contact" className="nav-item nav-link">
             Contact
-          </a>
-          <a class="nav-item nav-link" href="#">
+          </Link>
+          <Link to="/about" className="nav-item nav-link">
             About
-          </a>
+          </Link>
+          <Link to="/login" className="nav-item nav-link">Login</Link>
+          <Link to="/signup" className="nav-item nav-link">Signup</Link>
+
         </div>
       </div>
     </nav>
@@ -28,3 +30,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
